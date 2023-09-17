@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "TikTokSort",
+    "version": "1.0",
+    "description": "Sort TikTok videos by likes, comments, oldest and newest",
+    "icons": {
+      "16": "/images/sort.png",
+      "48": "/images/sort.png",
+      "128": "/images/sort.png"
+    },
+    "author": "https://github.com/anichukwuebuka65",
+    "permissions": [
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": [
+          ],
+          "matches": ["https://www.tiktok.com/*"]
+        }
+    ],
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.tiktok.com/*"
+          ],
+          "css": [
+            "popup/popup.css"
+          ],
+          "js": [
+                "scripts/contentScript.js"
+              ]
+        }
+    ],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "matches": ["https://www.tiktok.com/*"]
+    }
+  }
+  

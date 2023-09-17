@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TikTok Sorter</title>
+  <link rel="stylesheet" href="/popup/popup.css">
+  <script defer src="/popup/popup.js"></script>
+</head>
+<body>
+
+  <div class="popup main-content">
+
+    <header class="sortik-header">
+      <div class="sortik-logo-header">
+        <h1>TIKTOK SORT</h1>
+      </div>
+    </header>
+  
+    <div class="sortik-title-primary">
+      <h3>Sort Videos By</h3>
+    </div>
+    <div class="error"></div>
+    <div class="sortik-centerize-content">
+      <div class="sortik-sort-buttons">
+        <div class="sortik-switcs">
+          <label for="bookmarks" class="sortik-switch-label">Bookmarks</label>
+          <input id="bookmarks" name="sort" class="btn btn-by-like" type="radio" value="bookmarks">
+        </div>
+        <hr />
+
+        <div class="sortik-switcs">
+          <label for="likes" class="sortik-switch-label">Likes</label>
+          <input id="likes" name="sort" class="btn btn-by-like" type="radio" value="likes">
+        </div>
+        <hr />
+
+        <div class="sortik-switcs">
+          <label for="shares" class="sortik-switch-label">Shares</label>
+          <input id="shares" name="sort" class="btn btn-by-like" type="radio" value="shares">
+        </div>
+        <hr />
+
+        <div class="sortik-switcs">
+          <label for="comments" class="sortik-switch-label">Comments</label>
+          <input id="comments" name="sort" class="btn btn-by-like" type="radio" value="comments">
+        </div>
+      </div>
+    </div>
+      
+    <footer class="sortik-footer">
+      <div class="sortik-display-version">
+        <span>PRO Version</span>
+      </div>
+      <div class="sortik-buy-pro-btn">
+        <button class="btn btn-unlock sortik-if-pro">Unlock PRO</button>
+      </div>
+        <div class="sortik-extensions-info">
+          <span>?</span>
+        </div>
+      </footer>
+  </div>
+    <!-- IF Url Does Not Match -->
+  <div class="popup-if-not-url">
+    <a class="popup-if-not-url-button" href="http://tiktok.com" target="_blank">Go to TikTok to use this extension</a>
+  </div>
+</body>
+</html>
